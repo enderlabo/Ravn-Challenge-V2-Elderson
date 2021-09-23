@@ -36,6 +36,14 @@
     margin-top: 2rem;
 }
 
+.card-errorMsg{
+    color: $TextError;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-left: 7rem;
+    margin-top: 1rem;
+}
+
 .fake-line {
     width: 97.5%;
     height: 2px;
