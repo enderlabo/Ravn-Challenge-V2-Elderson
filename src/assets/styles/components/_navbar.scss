@@ -1,0 +1,21 @@
+@use 'settings';
+
+    nav {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        font-size: 1.2rem;
+        background-color: $RanvBlack;
+        color: white;
+        font-weight: bold;
+        height: 3rem;
+        ul {
+            list-style-type: none;
+            li {
+                margin-left: -5px;
+            }
+        }
+         
+    }
