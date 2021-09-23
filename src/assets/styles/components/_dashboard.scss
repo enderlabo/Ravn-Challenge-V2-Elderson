@@ -1,0 +1,17 @@
+@use 'settings';
+
+.dashboard-column{
+    background-color: $Base;
+    flex: 22%;
+    width: 200px;
+    height: 100vh;
+    padding: 0.25rem;
+    border-right: 2px $LineHeigh solid;
+    line-height: 10px;
+}
+
+.dashboard-info {
+    flex: 70%;
+    width: auto;
+    height: 100vh;
+}

@@ -1,4 +1,5 @@
 import Navbar from "./components/layout/Navbar";
+import Dashboard from "./pages/Dashboard";
 
 
 
@@ -6,7 +7,7 @@ function App() {
   return (
     <>
     <Navbar />
-     <h1>Hi there</h1>
+     <Dashboard />
     </>
   );
 }
