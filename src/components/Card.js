@@ -1,6 +1,16 @@
-import React from 'react'
+import {useEffect} from 'react'
+import { useQuery, gql } from '@apollo/client';
+import { LOAD_ALL_PEOPLE } from '../GraphQL/querys';
 
 export default function Card() {
+
+  const { error, loading, data } = useQuery(LOAD_ALL_PEOPLE);
+
+  useEffect(() => {
+
+    console.log(data);
+  }, [data])
+
     const arrow = '>'
     return (
       <>
