@@ -42,7 +42,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 This project is a simple SPA, using ReactJS, apolloClient and Star Wars GraphQL Api.
 
 ## ScreenShots
-![Algorithm schema](./images/ravn-app.png)
+![ScreenShot](./images/ravn-app.png)
 
 ### Technologies
 
