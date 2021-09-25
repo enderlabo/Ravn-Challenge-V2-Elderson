@@ -1,34 +1,52 @@
-import {useEffect} from 'react'
-import { useQuery, gql } from '@apollo/client';
-import { LOAD_ALL_PEOPLE } from '../GraphQL/querys';
+import { useState, useEffect } from 'react'
+import { useQuery } from '@apollo/client';
+import { Link } from 'react-router-dom'
+import { LOAD_ALL_PEOPLE } from '../GraphQL/Resolvers/Querys/querys';
+import LoadingSpinner from './LoadingSpinner';
+import { RightOutlined } from '@ant-design/icons';
 
 export default function Card() {
 
   const { error, loading, data } = useQuery(LOAD_ALL_PEOPLE);
-
+  const [isLoading, setIsLoading] = useState(false);
+  const arrow = '>'
+  
   useEffect(() => {
-
-    console.log(data);
+    // if(data){
+    //   console.log('my state', data)
+    // }
+    const loadingTimer = setTimeout(() => {
+      setIsLoading(true)
+    }, 3000);
+    return () => clearTimeout(loadingTimer);
   }, [data])
 
-    const arrow = '>'
+  if (loading) return <> <LoadingSpinner /> </>
+  if (error) return  <><h3 className="card-errorMsg">Failed to Load Data</h3></>
+
+
     return (
       <>
-      {/* Error message */}
-        {/* <h3 className="card-errorMsg">Failed to Load Data</h3> */}
-
-        <div className="card-container">
-          <div className="card-titles">
-            <h2>Luke Skywalker</h2>
-            <br />
-            <h3>Human from Tatooine</h3>
-          </div>
-          <div>
-            {/* arrow-left icon */}
-            <p className="card-icon">{arrow}</p>
-          </div>
-        </div>
-        <div className="fake-line"></div>
+        {data &&
+          data.allPeople.people.slice(0, 8).map((people, index) => (
+            <>
+              <div key={people.id} className="card-container">
+                <div className="card-titles">
+                  <h2>{people.name}</h2>
+                  <br />
+                  <p>from {people.homeworld.name}</p>
+                </div>
+                <div>
+                  <Link to={`/${index + 1}`}>
+                    <p className="card-icon"><RightOutlined /></p>
+                    
+                  </Link>
+                </div>
+              </div>
+              <div className="fake-line"></div>
+            </>
+          ))}
+        {!isLoading && <LoadingSpinner />}
       </>
     );
 }

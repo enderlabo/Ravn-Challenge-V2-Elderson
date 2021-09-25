@@ -1,13 +1,9 @@
-import Navbar from "./components/layout/Navbar";
-import Dashboard from "./pages/Dashboard";
-
-
+import AppRoutes from "./AppRoutes";
 
 function App() {
   return (
     <>
-    <Navbar />
-     <Dashboard />
+     <AppRoutes />
     </>
   );
 }
