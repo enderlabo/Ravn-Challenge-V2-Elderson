@@ -11,7 +11,7 @@ export default function PeopleDetail() {
         variables: { personID: personID }
     })
     const getStarship = useQuery(LOAD_STARSHIP, {
-        variables: { starshipID: personID  }
+        variables: { starshipID : personID  }
     })
 
     useEffect(() => {

@@ -29,9 +29,28 @@ export const LOAD_PEOPLE_DETAIL = gql`
       homeworld{
         name
       },
-    }
+    },
   }
   `;
+
+  // export const LOAD_PEOPLE_DETAIL = gql`
+  // query GetPeopleDetail($personID: ID!) {
+  //   person(personID: $personID) {
+  //     name,
+  //     birthYear,
+  //     eyeColor,
+  //     gender,
+  //     hairColor,
+  //     skinColor,
+  //     homeworld{
+  //       name
+  //     },
+  //   },
+  //   starship(starshipID: $personID){
+  //     name
+  //   }
+  // }
+  // `;
 
   export const LOAD_STARSHIP = gql`
   query GetStarship($personID: ID!) {

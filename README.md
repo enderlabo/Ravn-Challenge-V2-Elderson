@@ -1,7 +1,5 @@
 # Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+This challenge is provide from Ravn.
 ## Available Scripts
 
 In the project directory, you can run:
@@ -39,32 +37,23 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Project Description
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is a simple SPA, using ReactJS, apolloClient and Star Wars GraphQL Api.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ScreenShots
+![Algorithm schema](./images/ravn-app.png)
 
-### Code Splitting
+### Technologies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Project is created with:
+* NodeSass: 5.0.0
+* ReactJS: 17.0.2
+* React-Router-Dom: 5.3.0
+* AtnDesign/Icons: 4.7.0
+* ApolloClient: 3.4.13
+* graphql: 15.6.0
 
-### Analyzing the Bundle Size
+### Additional Information
+challenge was very fun and an little stressing because some data from the server are undefined...,  i was loss time read documentation and watch examples with GraphQL but i'm happy because i'm clear some doubts about GraphQL
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
