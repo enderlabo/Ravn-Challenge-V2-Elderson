@@ -1,10 +1,34 @@
 @use 'settings';
 
 .peopleDetail-container {
+    width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    padding: 4rem;
+    padding-top: 1rem;
+    
+}
+.peopleDetail-contain {
+    width: 70%;
+    ul {
+        padding: 0;
+    }
+    li {
+        display: flex;
+        list-style: none;
+        height: 5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.peopleDetail-list {
+    margin-top: 1rem;
+    h2 {
+        color: $TextLight;
+    }
+    p {
+        font-size: 1.50rem;
+        font-weight: bold;
+    }
 }
 
 .people-detail {
@@ -25,10 +49,10 @@
     flex-direction: column;
 }
 
-.fake2-line {
+.fake-line2 {
     width: 100%;
     height: 2px;
     border-top: 2px $LineHeigh solid;
     line-height: 10px;
-    margin-top: 1rem;
+    
 }

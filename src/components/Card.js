@@ -9,15 +9,12 @@ export default function Card() {
 
   const { error, loading, data } = useQuery(LOAD_ALL_PEOPLE);
   const [isLoading, setIsLoading] = useState(false);
-  const arrow = '>'
   
   useEffect(() => {
-    // if(data){
-    //   console.log('my state', data)
-    // }
     const loadingTimer = setTimeout(() => {
       setIsLoading(true)
     }, 3000);
+    console.log(data)
     return () => clearTimeout(loadingTimer);
   }, [data])
 
@@ -30,19 +27,22 @@ export default function Card() {
         {data &&
           data.allPeople.people.slice(0, 8).map((people, index) => (
             <>
-              <div key={people.id} className="card-container">
-                <div className="card-titles">
-                  <h2>{people.name}</h2>
-                  <br />
-                  <p>from {people.homeworld.name}</p>
+              <Link style={{ textDecoration: 'none' }} to={`/${index + 1}`}>
+                <div key={people.id}>
+                  <div className="card-container">
+                    <div className="card-titles">
+                      <h2>{people.name}</h2>
+                      <br />
+                      <p> {!people.species ? 'Human' : people.species.name } from {people.homeworld.name}</p>
+                    </div>
+                    <div>
+                      <p className="card-icon">
+                        <RightOutlined />
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <Link to={`/${index + 1}`}>
-                    <p className="card-icon"><RightOutlined /></p>
-                    
-                  </Link>
-                </div>
-              </div>
+              </Link>
               <div className="fake-line"></div>
             </>
           ))}

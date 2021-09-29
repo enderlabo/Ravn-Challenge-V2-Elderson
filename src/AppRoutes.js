@@ -5,7 +5,6 @@ import {
     Redirect
   } from "react-router-dom";
 import Navbar from "./components/layout/Navbar";
-import PeopleDetail from "./components/PeopleDetail";
 import Dashboard from "./pages/Dashboard";
 
   

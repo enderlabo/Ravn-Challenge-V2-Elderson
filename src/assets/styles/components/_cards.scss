@@ -4,26 +4,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-content: center;
-    height: 3rem;
-    width: 90%;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    cursor: pointer;
+    padding: 0 1rem;
+    height: 5rem;
+    width: 87%;
+    margin-left: 1.5rem;
     
     
-    
+    &:hover{
+        background-color: $LineHeigh;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: inherit;
+    }
 }
 
 .card-titles {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     p {
         margin-top: 0.50rem;
         color: $TextLight;
         font-size: 1rem;
-        
     }
     h2 {
         color: $TextDark;
@@ -32,7 +36,7 @@
 }
 
 .card-icon {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
     font-weight: bold;
     margin-top: 2rem;
 }
@@ -47,14 +51,22 @@
 }
 
 .fake-line {
-    width: 97.5%;
+    width: 95%;
     height: 2px;
-    border-top: 2px $LineHeigh solid;
+    border-top: 1px $LineHeigh solid;
     line-height: 10px;
-    margin-top: 2rem;
-    margin-left: 1rem;
+    margin-top: 0rem;
+    margin-left: 1.64rem;
 }
 
 .anticon svg {
     color: $TextDark;
+    margin-bottom: 2.25rem;
+}
+
+.isActive {
+    background-color: $LineHeigh;
+}
+.isntActive {
+    background-color: transparent;
 }
