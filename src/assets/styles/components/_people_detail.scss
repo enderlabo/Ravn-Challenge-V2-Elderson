@@ -1,5 +1,8 @@
 @use 'settings';
 
+h1 {
+    color: $TextDark;
+}
 .peopleDetail-container {
     width: 100%;
     display: flex;
