@@ -11,9 +11,9 @@ This challenge is provide from Ravn.
 This project is a simple SPA, using ReactJS, apolloClient and Star Wars GraphQL Api.
 
 ## ScreenShots
-![Image](https://ibb.co/zGN3RyK)
-![Image](https://ibb.co/HrYwgLc)
-![Image](https://ibb.co/4Mpx4Sx)
+![Image]('./assets/images/dashboard.png')
+![Image]('./assets/images/dashboard2.png')
+![Image]('./assets/images/peopledetail.png')
 
 
 ### Technologies
