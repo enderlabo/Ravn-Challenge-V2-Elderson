@@ -11,7 +11,7 @@ This challenge is provide from Ravn.
 This project is a simple SPA, using ReactJS, apolloClient and Star Wars GraphQL Api.
 
 ## ScreenShots
-![Image]('./assets/images/dashboard.png')
+![Image]('dashboard.png')
 ![Image]('./assets/images/dashboard2.png')
 ![Image]('./assets/images/peopledetail.png')
 
